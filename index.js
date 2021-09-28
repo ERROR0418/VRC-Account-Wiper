@@ -40,7 +40,7 @@ AuthenticationApi.getCurrentUser().then(resp => {
     console.log("Wiping all moderations against users!")
     ModerationApi.clearAllPlayerModerations()
 
-    console.log("Wiping all main favorites!")
+    console.log("Wiping 100 main favorites!")
     AvatarApi.getFavoritedAvatars("", "random", 100).then(avatars=>{
         avatars.data.forEach(avatar=>{
             FavoritesApi.removeFavorite(avatar.id)
