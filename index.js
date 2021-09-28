@@ -35,15 +35,18 @@ AuthenticationApi.getCurrentUser().then(resp => {
     currentUser.friends.forEach(friend=>{
         FriendsApi.unfriend(friend);
     });
+    console.log("Wiped friends!")
 
     console.log("Wiping all moderations against users!")
     ModerationApi.clearAllPlayerModerations()
+    console.log("Wiped moderations!")
 
     console.log("Wiping 100 main favorites!")
     AvatarApi.getFavoritedAvatars("", "random", 100).then(avatars=>{
         avatars.data.forEach(avatar=>{
             FavoritesApi.removeFavorite(avatar.id)
         })
+        console.log("Wiped favorites!")
     }).catch(console.error)
 
 });
