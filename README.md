@@ -11,5 +11,8 @@ Yes the code is bad, no, I don't care.
 
 
 ## How to use
+Required NodeJS
 
 Run `npm install` then just `node . USERNAME PASSWORD`
+
+Using a token is currently broken.

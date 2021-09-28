@@ -1,5 +1,23 @@
 {
   "dependencies": {
     "vrchat": "^1.4.0"
-  }
+  },
+  "name": "vrc-account-wiper",
+  "description": "If you are no-longer using a VRC account this will clear it of EVERYTHING.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ERROR0418/VRC-Account-Wiper.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ERROR0418/VRC-Account-Wiper/issues"
+  },
+  "homepage": "https://github.com/ERROR0418/VRC-Account-Wiper#readme"
 }
