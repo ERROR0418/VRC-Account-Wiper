@@ -1,4 +1,3 @@
-const { UsersApi } = require("vrchat");
 const vrchat = require("vrchat");
 
 var launchArgs = process.argv.slice(2);
